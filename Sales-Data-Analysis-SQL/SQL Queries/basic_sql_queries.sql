@@ -29,6 +29,7 @@ SELECT * FROM dbo.fins_sales where Segment = 'Enterprise';
 SELECT * FROM dbo.fins_sales where Segment = 'Enterprise' AND Units_Sold <= 1500;
 
 SELECT SUM(Profit) as Total_Profits FROM dbo.fins_sales where Segment = 'Enterprise' AND Units_Sold <= 1500;
+
 SELECT SUM(Profit) as Total_Profits FROM dbo.fins_sales where Segment = 'Enterprise' AND Units_Sold >= 1500;
 
 SELECT SUM(Profit) as Total_Profits,Country FROM dbo.fins_sales where Segment = 'Enterprise' group by Country;
